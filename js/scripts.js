@@ -1,5 +1,15 @@
 var copingMechanisms = {meditation: 'Meditate more', exercise: 'Exercise more', substances: 'Avoid intensifiers', social: 'Seek social support', treatment: 'See a mental health professional'};
 
+var calculateResult = function(score) {
+  if(score < 4) {
+    return '#low-stress';
+  } else if (score > 5) {
+    return '#high-stress';
+  } else {
+    return '#med-stress';
+  }
+};
+
 //Front
 $(document).ready(function(){
   $("form#stress-survey").submit(function(event){
@@ -21,6 +31,10 @@ $(document).ready(function(){
       $('#recommendations').append('<li>' + copingMechanisms[item] + '</li>')
     });
 
+    $(calculateResult(scoreCounter)).show();
+    if(copingArray.length != 0){
+      $('#advice-stress').show();
+    }
   });
 
 });
