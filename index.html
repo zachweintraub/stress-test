@@ -10,21 +10,37 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+        <h2>Stress Survey</h2>
+      </div>
       <form id="stress-survey">
         <div class="form-group">
           <input type="checkbox" name="warning-signs" value="sleep-loss">Loss of sleep<br>
-          <input type="checkbox" name="warning-signs" value="sleep-loss">Loss of sleep<br>
-          <input type="checkbox" name="warning-signs" value="sleep-loss">Loss of sleep<br>
-          <input type="checkbox" name="warning-signs" value="sleep-loss">Loss of sleep<br>
-          <input type="checkbox" name="warning-signs" value="sleep-loss">Loss of sleep<br>
+          <input type="checkbox" name="warning-signs" value="headaches">Headaches<br>
+          <input type="checkbox" name="warning-signs" value="low-energy">Low Energy<br>
+          <input type="checkbox" name="warning-signs" value="appetite">Changes in Appetite<br>
+          <input type="checkbox" name="warning-signs" value="digestion">Digestive Issues<br>
         </div>
         <div class="form-group">
           <input type="checkbox" name="symptoms" value="high-blood-pressure">High blood pressure<br>
-          <input type="checkbox" name="symptoms" value="high-blood-pressure">High blood pressure<br>
-          <input type="checkbox" name="symptoms" value="high-blood-pressure">High blood pressure<br>
-          <input type="checkbox" name="symptoms" value="high-blood-pressure">High blood pressure<br>
-          <input type="checkbox" name="symptoms" value="high-blood-pressure">High blood pressure<br>
+          <input type="checkbox" name="symptoms" value="frequent-sickness">Frequent Sickness<br>
+          <input type="checkbox" name="symptoms" value="erectile-disfunction">Erectile Disfunction<br>
+          <input type="checkbox" name="symptoms" value="chronic-pain">Chronic Pain<br>
+          <input type="checkbox" name="symptoms" value="acne">Acne<br>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="coping" value="meditation">Meditate<br>
+          <input type="checkbox" name="coping" value="exercise">Exercise<br>
+          <input type="checkbox" name="coping" value="substances">Avoid intensifiers, i.e. alcohol, nicotine, caffine<br>
+          <input type="checkbox" name="coping" value="social">Seek support - Don't isolate!<br>
+          <input type="checkbox" name="coping" value="treatment">Seek treatment from a mental health professional<br>
+
+          <button type="submit">Submit Survey</button>
       </form>
+      <span id="advice">
+        <p><b>We recommend the following coping mechanisms:</b></p>
+        <ul id="recommendations"></ul>
+      </span>
     </div>
   </body>
 </html>
